@@ -1,2 +1,9 @@
-# robinhood-chain-erc20-token
-ERC20 token deployment on Robinhood Chain testnet using Hardhat
+contracts/
+  KarimToken.sol
+
+scripts/
+  deployToken.js
+  checkToken.js
+  tokenInteract.js
+
+hardhat.config.js
