@@ -1,13 +1,47 @@
-# Sample Hardhat Project
+# 🚀 Karim Token (KRM)
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+Custom ERC20 Token deployed on Robinhood Chain Testnet.
 
-Try running some of the following tasks:
+## 🔥 Features
+- ERC20 Token (OpenZeppelin)
+- Hardhat deployment
+- Mint initial supply
+- Transfer & interaction scripts
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
+## 🛠 Tech Stack
+- Solidity
+- Hardhat
+- OpenZeppelin
+- Ethers.js
+
+## 📦 Install
+```bash
+npm install
 ```
+
+## ⚙️ Setup
+Create .env file:
+
+```bash
+PRIVATE_KEY=your_wallet_private_key
+RPC_URL=https://rpc.testnet.chain.robinhood.com
+```
+
+## 🚀 Deploy
+```bash
+npx hardhat run scripts/deployToken.js --network robinhood
+```
+
+## 🔁 Interact
+```bash
+npx hardhat run scripts/checkToken.js --network robinhood
+```
+
+## 📜 Contract
+Network: Robinhood Testnet  
+Token: KRM  
+Owner: Karim
+
+---
+
+Built with ❤️ by Karim
