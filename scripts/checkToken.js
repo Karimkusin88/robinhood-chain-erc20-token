@@ -4,7 +4,9 @@ const { ethers } = require("hardhat");
 async function main() {
   const [wallet] = await ethers.getSigners();
 
-  const TOKEN_ADDRESS = "0x69c445eB7233457bFF8BdDa40e151159b669678f";
+  const TOKEN_ADDRESS = process.env.TOKEN_ADDRESS;
+if (!TOKEN_ADDRESS) throw new Error("TOKEN_ADDRESS missing in .env");
+
   const RECEIVER = "0x000000000000000000000000000000000000dEaD";
 
   const token = await ethers.getContractAt("KarimToken", TOKEN_ADDRESS);
