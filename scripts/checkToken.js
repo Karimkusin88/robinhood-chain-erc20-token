@@ -5,7 +5,7 @@ async function main() {
   const [wallet] = await ethers.getSigners();
   console.log("Wallet:", wallet.address);
 
-  const TOKEN_ADDRESS = "0xC8A531b37A1E8fBd860A853a5C6B7c75A753621C";
+  const TOKEN_ADDRESS = "0x69c445eB7233457bFF8BdDa40e151159b669678f";
 
   const token = await ethers.getContractAt("KarimToken", TOKEN_ADDRESS);
 

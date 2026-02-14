@@ -1,20 +1,22 @@
+require("dotenv").config();
 const { ethers } = require("hardhat");
 
 async function main() {
-  const tokenAddress = "0xC8A531b37A1E8fBd860A853a5C6B7c75A753621C";
+  const [wallet] = await ethers.getSigners();
+  const TOKEN_ADDRESS = "0x69c445eB7233457bFF8BdDa40e151159b669678f";
 
-  const token = await ethers.getContractAt("KarimToken", tokenAddress);
+  const token = await ethers.getContractAt("KarimToken", TOKEN_ADDRESS);
 
-  const [me] = await ethers.getSigners();
+  console.log("Sender:", wallet.address);
 
   const tx = await token.transfer(
-    "0x000000000000000000000000000000000000dead",
-    ethers.parseUnits("10", 18)
+    wallet.address,
+    ethers.parseUnits("1", 18)
   );
 
   await tx.wait();
 
-  console.log("✅ Transfer success");
+  console.log("✅ Transfer success!");
 }
 
 main();
