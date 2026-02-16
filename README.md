@@ -1,158 +1,136 @@
-<div align="center">
+# Karim Token (KRM)
 
-# 🪙 Karim Token (KRM)
-### Robinhood Chain Testnet • ERC20 + Airdrop + Permit Playground
+Custom ERC20 Token deployed on Robinhood Chain Testnet.
+Built for deployment automation, scripting, and token distribution experiments.
 
-<p>
-  <img alt="Solidity" src="https://img.shields.io/badge/Solidity-^0.8.24-363636?logo=solidity">
-  <img alt="Hardhat" src="https://img.shields.io/badge/Hardhat-Runner-yellow?logo=ethereum">
-  <img alt="Ethers" src="https://img.shields.io/badge/Ethers-v6-4c6ef5">
-  <img alt="License" src="https://img.shields.io/badge/License-MIT-success">
-</p>
+------------------------------------------------------------
 
-<p>
-  <a href="https://github.com/Karimkusin88/robinhood-chain-test/actions/workflows/ci.yml">
-    <img alt="CI" src="https://github.com/Karimkusin88/robinhood-chain-test/actions/workflows/ci.yml/badge.svg">
-  </a>
-</p>
+CONTRACT INFORMATION
 
-**A clean, modular Hardhat repo showcasing token deployment, scripting automation, and distribution mechanics on Robinhood Chain Testnet.**  
-Built for testnet participation + portfolio proof.
+Token Name: Karim Token
+Symbol: KRM
+Standard: ERC20 (OpenZeppelin)
 
-</div>
+Network: Robinhood Chain Testnet
+Contract Address:
+0x69c445eB7233457bFF8BdDa40e151159b669678f
 
----
+------------------------------------------------------------
 
-## ✨ What’s inside
+CORE FEATURES
 
-✅ ERC20 token deployment (OpenZeppelin)  
-✅ Interaction scripts (check / transfer / interact)  
-✅ Airdrop scripts (single + batch)  
-✅ Permit scripts (batch permit airdrop)  
-✅ Automated tests (Hardhat)  
-✅ `.env` safety + clean folder structure  
+- ERC20 Standard Token
+- Deployment via Hardhat
+- Transfer automation scripts
+- Single & Batch Airdrop
+- Permit-based distribution
+- Gas measurement support
+- Automated test suite
 
----
+------------------------------------------------------------
 
-## 🧠 Why this repo exists
+TECH STACK
 
-This repository is designed to prove practical skills:
+- Solidity ^0.8.24
+- Hardhat
+- OpenZeppelin Contracts
+- Ethers.js v6
+- dotenv
+- Mocha + Chai
 
-- shipping contracts + scripts
-- repeatable workflows (deploy → interact → distribute)
-- clean structure that others can run
-- testnet-ready tooling for contributions
+------------------------------------------------------------
 
----
-
-## 📦 Project Structure
-
-```bash
-contracts/
-  Hello.sol
-  KarimToken.sol
-
-scripts/
-  core/        # deploy + basic interactions
-  airdrop/     # airdrop scripts
-  permit/      # permit signature flows
-  dev/         # experiments: mint/burn/pause
-
-test/
-hardhat.config.js
-.env.example
-⚙️ Quickstart
-1) Install
+INSTALLATION
 
 npm install
-2) Setup env
-Create .env (never commit your private key):
 
-cp .env.example .env
-Edit .env:
+------------------------------------------------------------
 
-env
+ENVIRONMENT SETUP
+
+Create a .env file:
 
 PRIVATE_KEY=your_wallet_private_key
 RPC_URL=https://rpc.testnet.chain.robinhood.com
 TOKEN_ADDRESS=0x69c445eB7233457bFF8BdDa40e151159b669678f
-3) Compile + Test
 
-npx hardhat compile
-npx hardhat test
-Gas report:
+IMPORTANT:
+Never expose your private key.
 
-REPORT_GAS=true npx hardhat test
-🚀 Deploy
-Deploy token to Robinhood Chain Testnet:
+------------------------------------------------------------
+
+DEPLOY TOKEN
 
 npx hardhat run scripts/core/deployToken.js --network robinhood
-Deployed token for this repo:
-0x69c445eB7233457bFF8BdDa40e151159b669678f
 
-🔁 Interact
-Check token details:
+------------------------------------------------------------
+
+CHECK TOKEN
 
 npx hardhat run scripts/core/checkToken.js --network robinhood
-Transfer tokens:
+
+------------------------------------------------------------
+
+TRANSFER TOKEN
 
 npx hardhat run scripts/core/transferToken.js --network robinhood
-🎁 Airdrop
-Single airdrop:
 
+------------------------------------------------------------
+
+AIRDROP
+
+Single address:
 npx hardhat run scripts/airdrop/airdrop.js --network robinhood
-Batch airdrop:
 
+Batch distribution:
 npx hardhat run scripts/airdrop/batchAirdrop.js --network robinhood
-🧾 Permit (Gas-friendly distribution)
-Test permit flow:
 
+------------------------------------------------------------
+
+PERMIT DISTRIBUTION
+
+Test permit:
 npx hardhat run scripts/permit/permitTest.js --network robinhood
-Batch permit airdrop:
 
+Batch permit-based airdrop:
 npx hardhat run scripts/permit/batchPermitAirdrop.js --network robinhood
-🧪 Testing
+
+------------------------------------------------------------
+
+TESTING
+
 Run tests:
-
 npx hardhat test
-Run tests with gas report:
 
+Gas benchmark:
 REPORT_GAS=true npx hardhat test
-🌐 Network
-Network: Robinhood Chain Testnet
-RPC: https://rpc.testnet.chain.robinhood.com
 
-📌 Contract Info
-Field	Value
-Token Name	Karim Token
-Symbol	KRM
-Network	Robinhood Chain Testnet
-Contract	0x69c445eB7233457bFF8BdDa40e151159b669678f
+------------------------------------------------------------
 
-🔒 Security Notes
-Never commit .env or private keys
+PROJECT STRUCTURE
 
-Use a burner wallet for testnet
+contracts/
+scripts/
+  core/
+  airdrop/
+  permit/
+  dev/
+test/
+hardhat.config.js
 
-Keep scripts deterministic and reviewable
+------------------------------------------------------------
 
-🧭 Next Up
-If you want to evolve this repo into “airdrop-grade”:
+PURPOSE
 
-Merkle Airdrop (proof-based claims)
+This project demonstrates:
 
-Snapshot-based distribution (CSV/JSON)
+- Smart contract deployment workflow
+- Script-based token automation
+- Token distribution logic
+- Permit signature usage
+- Real testnet interaction readiness
 
-Frontend dashboard (balances + claim UI)
+------------------------------------------------------------
 
-Contract verification script
-
-Ownership hardening (Ownable / AccessControl / multisig)
-
-<div align="center">
-Built with ❤️ by Karim
+Built by Karim
 GitHub: https://github.com/Karimkusin88
-
-Learning in public. Shipping consistently.
-
-</div> ``` ::contentReference[oaicite:0]{index=0}
