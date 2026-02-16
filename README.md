@@ -1,4 +1,4 @@
- align="center">
+<div align="center">
 
 # 🪙 Karim Token (KRM)
 ### Robinhood Chain Testnet • ERC20 + Airdrop + Permit Playground
