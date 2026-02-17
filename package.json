@@ -4,7 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hardhat test",
+    "test:gas": "REPORT_GAS=true hardhat test",
+    "compile": "hardhat compile",
+    "deploy:token": "hardhat run scripts/core/deployToken.js --network robinhood",
+    "check:token": "hardhat run scripts/core/checkToken.js --network robinhood",
+    "transfer:token": "hardhat run scripts/core/transferToken.js --network robinhood",
+    "airdrop:single": "hardhat run scripts/airdrop/airdrop.js --network robinhood",
+    "airdrop:batch": "hardhat run scripts/airdrop/batchAirdrop.js --network robinhood",
+    "permit:test": "hardhat run scripts/permit/permitTest.js --network robinhood",
+    "permit:check": "hardhat run scripts/permit/checkPermit.js --network robinhood",
+    "permit:batch": "hardhat run scripts/permit/batchPermitAirdrop.js --network robinhood"
   },
   "repository": {
     "type": "git",
