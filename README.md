@@ -1,214 +1,98 @@
-# 🚀 Karim Token (KRM)
+---
 
-![CI](https://github.com/Karimkusin88/robinhood-chain-test/actions/workflows/ci.yml/badge.svg)
-![Network](https://img.shields.io/badge/Network-Robinhood%20Testnet-blue)
-![Solidity](https://img.shields.io/badge/Solidity-0.8.24-orange)
-![Hardhat](https://img.shields.io/badge/Built%20With-Hardhat-yellow)
-![License](https://img.shields.io/badge/License-MIT-green)
+# 🌐 Live On-Chain Deployment
 
-Custom ERC20 Token deployed on **Robinhood Chain Testnet**  
-Built for deployment automation, scripting, and token distribution experiments.
+## 📍 Network
+Robinhood Chain Testnet  
+RPC: https://rpc.testnet.chain.robinhood.com  
 
 ---
 
-## 📌 Contract Information
+## 🪙 Karim Token (KRM)
 
-**Token Name:** Karim Token  
-**Symbol:** KRM  
-**Standard:** ERC20 (OpenZeppelin)
+Contract Address:  
+0x69c445eB7233457bFF8BdDa40e151159b669678f  
 
-**Network:** Robinhood Chain Testnet  
-**Contract Address:**  
-`0x69c445eB7233457bFF8BdDa40e151159b669678f`
-
-**Explorer (if available):**  
-https://explorer.testnet.chain.robinhood.com/address/0x69c445eB7233457bFF8BdDa40e151159b669678f
+Explorer:  
+https://explorer.testnet.chain.robinhood.com/address/0x69c445eB7233457bFF8BdDa40e151159b669678f  
 
 ---
 
-## 🧠 Why This Matters
+## 🖼 KarimNFT (ERC721)
 
-This repository is not just a token deploy example.
+Contract Address:  
+0x265a208eE43A8dBc11BA8f28629D8eE377a31830  
 
-It demonstrates:
-
-- Real testnet deployment workflow
-- Script-driven automation
-- Token distribution logic (airdrop + permit)
-- Gas-aware development practices
-- Clean modular project structure
-
-This is how production-level smart contract repos are structured.
+Explorer:  
+https://explorer.testnet.chain.robinhood.com/address/0x265a208eE43A8dBc11BA8f28629D8eE377a31830  
 
 ---
 
-## 🔥 Core Features
+## 🏦 Vault Contract
 
-- ERC20 Standard Token
-- Deployment via Hardhat
-- Transfer automation scripts
-- Single & Batch Airdrop
-- Permit-based distribution
-- Gas measurement support
-- Automated test suite
-- Environment-safe configuration
+Purpose:  
+- Deposit ETH  
+- Withdraw ETH  
+- Simulate protocol treasury  
 
 ---
 
-## 🛠 Tech Stack
+## 🎁 Daily Reward System
 
-- Solidity ^0.8.24
-- Hardhat
-- OpenZeppelin Contracts
-- Ethers.js v6
-- dotenv
-- Mocha + Chai
-
----
-
-## 🏗 Architecture Overview
-
-User Wallet
-│
-▼
-Hardhat Scripts
-│
-├── deployToken.js
-├── transferToken.js
-├── airdrop.js
-├── batchAirdrop.js
-├── permit scripts
-│
-▼
-KarimToken.sol (ERC20)
-│
-▼
-Robinhood Chain Testnet
-
-
-Flow:
-
-Deploy → Interact → Distribute → Measure Gas → Iterate
+Features:
+- Daily check-in
+- Streak tracking
+- Points system
+- Claim reward logic
+- On-chain interaction
 
 ---
 
-## 📦 Installation
+# 📊 On-Chain Activity Summary
 
-```bash
-npm install
+This repository demonstrates:
 
+✔ ERC20 Deployment  
+✔ ERC721 Deployment  
+✔ Vault Treasury Logic  
+✔ Daily Check-in Smart Contract  
+✔ Reward Claim Mechanism  
+✔ Automated Hardhat Scripts  
+✔ Real Testnet Transactions  
 
-Flow:
-
-Deploy → Interact → Distribute → Measure Gas → Iterate
+All interactions executed directly on Robinhood Chain Testnet.
 
 ---
 
-## 📦 Installation
+# 🧠 Why This Matters
 
-```bash
-npm install
+This project is not a tutorial copy.
 
-⚙️ Environment Setup
-PRIVATE_KEY=your_wallet_private_key
-RPC_URL=https://rpc.testnet.chain.robinhood.com
-TOKEN_ADDRESS=0x69c445eB7233457bFF8BdDa40e151159b669678f
+It simulates:
 
-🚀 Deploy Token
-npx hardhat run scripts/core/checkToken.js --network robinhood
+- Token economy mechanics
+- Incentive design
+- User retention via daily streaks
+- On-chain treasury management
+- NFT + token integration
 
-🔁 Token Interaction
-npx hardhat run scripts/core/checkToken.js --network robinhood
+Designed as a practical builder portfolio and testnet participation framework.
 
-npx hardhat run scripts/core/transferToken.js --network robinhood
+---
 
-🎁 Airdrop
+# 🛣 Roadmap
 
-Single address:
+- [x] ERC20 Deployment
+- [x] NFT Deployment
+- [x] Vault Contract
+- [x] Daily Check-in System
+- [ ] Web Frontend Integration
+- [ ] Referral System
+- [ ] Leaderboard System
+- [ ] Gas Optimization Pass
+- [ ] Security Audit Pass
 
-npx hardhat run scripts/airdrop/airdrop.js --network robinhood
+---
 
-
-Batch distribution:
-
-npx hardhat run scripts/airdrop/batchAirdrop.js --network robinhood
-
-🧾 Permit Distribution
-npx hardhat run scripts/permit/permitTest.js --network robinhood
-
-npx hardhat run scripts/permit/batchPermitAirdrop.js --network robinhood
-
-🧪 Testing
-
-Run tests:
-
-npx hardhat test
-
-
-Gas benchmark:
-
-REPORT_GAS=true npx hardhat test
-
-📊 CI Integration
-
-This repository includes CI support.
-
-On every push:
-
-Contracts compile
-
-Tests run automatically
-
-Failures are detected early
-
-Workflow file location:
-.github/workflows/ci.yml
-
-📂 Project Structure
-contracts/
-scripts/
-  core/
-  airdrop/
-  permit/
-  dev/
-test/
-hardhat.config.js
-
-🗺 Roadmap
-
- ERC20 Deployment
-
- Interaction Scripts
-
- Airdrop Automation
-
- Permit Distribution
-
- Gas Reporting
-
- Contract Verification Script
-
- Merkle-based Airdrop
-
- Frontend Dashboard
-
- Snapshot-based distribution tool
-
-🎯 Purpose
-
-This project demonstrates:
-
-Clean contract deployment workflow
-
-Script-based token automation
-
-Token distribution mechanics
-
-Permit signature usage
-
-Real testnet readiness
-
-Production-style project structure
-
-Built with precision by Karim
-GitHub: https://github.com/Karimkusin88
+Built by Karim  
+Focused on protocol design & on-chain systems.
