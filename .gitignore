@@ -16,3 +16,7 @@ airdrop.json
 .env
 .env.*
 .env
+
+# Local simulation wallets
+airdropList.json
+airdropList.*.json
