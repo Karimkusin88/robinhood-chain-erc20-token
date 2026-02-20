@@ -20,3 +20,12 @@ airdrop.json
 # Local simulation wallets
 airdropList.json
 airdropList.*.json
+
+# Local simulation outputs
+airdropList.json
+communityStakeReport.json
+leaderboardKRM.json
+nftHolders.json
+stakingBoostLeaderboard.json
+leaderboard*.json
+*Report*.json
