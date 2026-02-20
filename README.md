@@ -1,97 +1,167 @@
+🌐 Robinhood Chain – On-Chain Ecosystem Build
 
-# 🌐 Live On-Chain Deployment
+Building a complete token + NFT + staking ecosystem on Robinhood Chain Testnet.
 
-## 📍 Network
-Robinhood Chain Testnet  
-RPC: https://rpc.testnet.chain.robinhood.com  
+This repository contains live deployed smart contracts, automated scripts, and on-chain simulations demonstrating a functional mini-protocol architecture.
 
----
+📍 Network
 
-## 🪙 Karim Token (KRM)
+Robinhood Chain Testnet
+RPC: https://rpc.testnet.chain.robinhood.com
 
-Contract Address:  
-0x69c445eB7233457bFF8BdDa40e151159b669678f  
+Explorer: https://explorer.testnet.chain.robinhood.com
 
-Explorer:  
-https://explorer.testnet.chain.robinhood.com/address/0x69c445eB7233457bFF8BdDa40e151159b669678f  
+🧾 Live Contracts (Testnet)
+✅ Official Contracts
+🪙 ERC20 – Karim Token (KRM v2)
 
----
+0x590b564b01C59C9a181c7a0694403e1DAB2fba16
 
-## 🖼 KarimNFT (ERC721)
+Explorer:
+https://explorer.testnet.chain.robinhood.com/address/0x590b564b01C59C9a181c7a0694403e1DAB2fba16
 
-Contract Address:  
-0x265a208eE43A8dBc11BA8f28629D8eE377a31830  
+🖼 ERC721 – KarimNFT (KNFT)
 
-Explorer:  
-https://explorer.testnet.chain.robinhood.com/address/0x265a208eE43A8dBc11BA8f28629D8eE377a31830  
+0x265a208eE43A8dBc11BA8f28629D8eE377a31830
 
----
+Explorer:
+https://explorer.testnet.chain.robinhood.com/address/0x265a208eE43A8dBc11BA8f28629D8eE377a31830
 
-## 🏦 Vault Contract
+🏦 KRMStaking (Base Staking)
 
-Purpose:  
-- Deposit ETH  
-- Withdraw ETH  
-- Simulate protocol treasury  
+Deployed staking contract with reward distribution logic.
 
----
+🚀 KRMStakingNFTBoost
 
-## 🎁 Daily Reward System
+NFT-boosted staking contract
+NFT holders receive increased reward multiplier.
 
-Features:
-- Daily check-in
-- Streak tracking
-- Points system
-- Claim reward logic
-- On-chain interaction
+0xd4284fFE0Aaf197714221C609F22cc2551f9485A
 
----
+⚠️ Deprecated
 
-# 📊 On-Chain Activity Summary
+ERC20 (KRM v1)
+0x69c445eB7233457bFF8BdDa40e151159b669678f
 
-This repository demonstrates:
+⚙️ Core Features
+🪙 Token System
 
-✔ ERC20 Deployment  
-✔ ERC721 Deployment  
-✔ Vault Treasury Logic  
-✔ Daily Check-in Smart Contract  
-✔ Reward Claim Mechanism  
-✔ Automated Hardhat Scripts  
-✔ Real Testnet Transactions  
+ERC20 deployment (v2 upgrade)
 
-All interactions executed directly on Robinhood Chain Testnet.
+Mint & ownership control
 
----
+Transfer simulation
 
-# 🧠 Why This Matters
+Community distribution
 
-This project is not a tutorial copy.
+🖼 NFT System
 
-It simulates:
+ERC721 minting
 
-- Token economy mechanics
-- Incentive design
-- User retention via daily streaks
-- On-chain treasury management
-- NFT + token integration
+Community airdrop simulation
 
-Designed as a practical builder portfolio and testnet participation framework.
+NFT holder tracking via event scanning
 
----
+📊 Leaderboard Engine
 
-# 🛣 Roadmap
+Token holder leaderboard
 
-- [x] ERC20 Deployment
-- [x] NFT Deployment
-- [x] Vault Contract
-- [x] Daily Check-in System
-- [ ] Web Frontend Integration
-- [ ] Referral System
-- [ ] Leaderboard System
-- [ ] Gas Optimization Pass
-- [ ] Security Audit Pass
+NFT holder leaderboard
 
----
+Staker leaderboard
 
-Built by Karim  
-Focused on protocol design & on-chain systems.
+Reward claim tracking
+
+Fully event-based (no enumerable dependency)
+
+🏦 Staking System
+
+Time-based reward emission
+
+Reward per second configuration
+
+Pool funding mechanism
+
+Claim & unstake logic
+
+🚀 NFT Boost Mechanism
+
+Detect NFT ownership on-chain
+
+Apply reward multiplier (2x configurable)
+
+Event-based boosted claim tracking
+
+🤖 Community Simulation
+
+Auto-generate wallets
+
+Mass token distribution
+
+Auto-stake execution
+
+Auto-claim simulation
+
+Gas top-up automation
+
+📊 On-Chain Activity Demonstrated
+
+✔ ERC20 Deployment
+✔ ERC721 Deployment
+✔ Staking Protocol
+✔ NFT Reward Boost Logic
+✔ Automated Community Staking
+✔ On-Chain Leaderboards
+✔ Event-Based Indexing Logic
+✔ Real Testnet Transactions
+
+All executed live on Robinhood Chain Testnet.
+
+🧠 Architecture Philosophy
+
+This project simulates:
+
+Token incentive design
+
+NFT-based reward mechanics
+
+Staking emission models
+
+Community growth simulation
+
+On-chain leaderboard analytics
+
+Protocol treasury mechanics
+
+Designed as a builder portfolio project and testnet participation framework.
+
+🛣 Roadmap
+
+ ERC20 Deployment (v2)
+
+ NFT Deployment
+
+ Community Airdrop Simulation
+
+ Leaderboard System
+
+ Staking Contract
+
+ NFT Boost Staking
+
+ Frontend Dashboard
+
+ Subgraph / Indexer Optimization
+
+ Gas Optimization Pass
+
+ Security Review
+
+ Mainnet Adaptation
+
+🧑‍💻 Builder
+
+Karim
+Focused on on-chain systems, protocol mechanics, and incentive architecture.
+
+Building in public.
